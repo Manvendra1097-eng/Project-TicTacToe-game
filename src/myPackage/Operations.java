@@ -17,14 +17,20 @@ public class Operations {
 		boolean change = true;
 		try {
 			if(turn%2==0) {
-				System.out.println("Turn:X choose row and column");
+				System.out.println("Turn:X choose row and column OR enter 100 to exit application");
 				rowCol[0] = scan.nextInt();
+				if(rowCol[0] == 100) {
+					System.exit(0);
+				}
 				rowCol[1] = scan.nextInt();
 			}
 			else
 			{
-				System.out.println("Turn:O choose row and column");
+				System.out.println("Turn:O choose row and column OR enter 100 to exit application");
 				rowCol[0] = scan.nextInt();
+				if(rowCol[0] == 100) {
+					System.exit(0);
+				}
 				rowCol[1] = scan.nextInt();
 			}
 		}
