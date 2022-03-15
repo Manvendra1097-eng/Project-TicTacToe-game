@@ -18,11 +18,11 @@ public class Operations {
 		try {
 			if(turn%2==0) {
 				System.out.println("Turn:X choose row and column OR enter 100 to exit application");
-				rowCol[0] = scan.nextInt();
+				rowCol[0] = scan.nextInt()-1;
 				if(rowCol[0] == 100) {
 					System.exit(0);
 				}
-				rowCol[1] = scan.nextInt();
+				rowCol[1] = scan.nextInt()-1;
 			}
 			else
 			{
@@ -35,7 +35,7 @@ public class Operations {
 			}
 		}
 		catch (Exception e) {
-			System.out.println("## Enter integer in range 0 to 2 only ##\n");
+			System.out.println("## Enter integer in range 1 to 3 only ##\n");
 			change = false;
 			scan.next();
 		}

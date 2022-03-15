@@ -39,7 +39,7 @@ public class TicTacToe {
 					turn++;
 				}
 				else
-					System.out.println("Enter row and coloumn in range 0 to 2.");
+					System.out.println("Enter row and coloumn in range 1 to 3.");
 		
 		}while(turn < 9);	
 			
